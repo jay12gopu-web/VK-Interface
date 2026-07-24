@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a3222">
+  <meta name="description" content="Scan or open the Visit Kerala travel guide.">
+  <title>Visit Kerala | Digital Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="https://jay12gopu-web.github.io/Visit-Kerala/" class="logo" aria-label="Visit Kerala home">VISIT KERALA</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="active" href="https://jay12gopu-web.github.io/Visit-Kerala/">Home</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="plan-button" href="https://jay12gopu-web.github.io/Visit-Kerala/itineraries.html">Plan Trip</a>
+        <a class="profile-button" href="https://jay12gopu-web.github.io/Visit-Kerala/profile.html" aria-label="Open traveller profile" title="Profile">
+          <i data-lucide="user-round" aria-hidden="true"></i>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="access-hero" aria-labelledby="page-title">
+      <img
+        class="hero-background"
+        src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1920&q=85"
+        alt="Houseboats travelling through Kerala backwaters"
+      >
+      <div class="hero-overlay"></div>
+
+      <div class="access-container">
+        <header class="hero-copy reveal">
+          <span class="eyebrow">Digital Gateway</span>
+          <h1 id="page-title">Visit Kerala</h1>
+          <p>Destinations, itineraries, stays and local travel ideas, ready wherever the journey begins.</p>
+        </header>
+
+        <div class="access-grid">
+          <article class="access-panel website-panel reveal" style="--reveal-delay: 100ms">
+            <div class="panel-heading">
+              <span class="panel-icon" aria-hidden="true"><i data-lucide="globe-2"></i></span>
+              <div>
+                <span class="panel-label">Live Access</span>
+                <h2>Visit Kerala Website</h2>
+              </div>
+              <span class="status-badge"><span></span>Online</span>
+            </div>
+
+            <a
+              class="qr-link"
+              href="https://jay12gopu-web.github.io/Visit-Kerala/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open the Visit Kerala website"
+            >
+              <span class="qr-crop">
+                <img src="VISIT KERALA.png" alt="QR code for the Visit Kerala website">
+                <span class="scan-line" aria-hidden="true"></span>
+              </span>
+            </a>
+
+            <div class="panel-footer">
+              <div class="panel-summary">
+                <strong>Explore the complete guide</strong>
+                <span>Places, plans, hotels and travel information</span>
+              </div>
+              <div class="panel-actions">
+                <a class="primary-action" href="https://jay12gopu-web.github.io/Visit-Kerala/" target="_blank" rel="noopener">
+                  Open Website
+                  <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <button class="icon-action" id="copy-link" type="button" title="Copy website link" aria-label="Copy website link">
+                  <i data-lucide="copy" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="access-panel assistant-panel reveal" style="--reveal-delay: 220ms">
+            <img
+              src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85"
+              alt="Houseboat on a quiet Kerala waterway"
+            >
+            <div class="assistant-overlay"></div>
+            <div class="assistant-content">
+              <span class="panel-icon light" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+              <span class="panel-label light-label">Next Access Point</span>
+              <h2>Kerala Travel Assistant</h2>
+              <p>Destination answers, route ideas and trip planning support in one place.</p>
+              <button class="coming-soon" type="button" disabled>
+                <i data-lucide="clock-3" aria-hidden="true"></i>
+                QR Coming Soon
+              </button>
+            </div>
+            <span class="assistant-number" aria-hidden="true">02</span>
+          </article>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#access-details" aria-label="View access details">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="access-details" id="access-details" aria-label="Visit Kerala access highlights">
+      <div class="details-container">
+        <div class="detail-item reveal">
+          <i data-lucide="map-pinned" aria-hidden="true"></i>
+          <div><strong>Kerala Guide</strong><span>Destinations and local highlights</span></div>
+        </div>
+        <div class="detail-item reveal" style="--reveal-delay: 100ms">
+          <i data-lucide="route" aria-hidden="true"></i>
+          <div><strong>Four Trip Plans</strong><span>From 3 to 10 days</span></div>
+        </div>
+        <div class="detail-item reveal" style="--reveal-delay: 200ms">
+          <i data-lucide="smartphone" aria-hidden="true"></i>
+          <div><strong>Mobile Ready</strong><span>Open on any modern device</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="https://jay12gopu-web.github.io/Visit-Kerala/">VISIT KERALA</a>
+          <p>Travel inspiration based on resources from Kerala Tourism, Department of Tourism, Government of Kerala.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="https://jay12gopu-web.github.io/Visit-Kerala/destinations.html">Destinations</a>
+            <a href="https://jay12gopu-web.github.io/Visit-Kerala/itineraries.html">Vacation Plans</a>
+            <a href="https://jay12gopu-web.github.io/Visit-Kerala/experiences.html">Experiences</a>
+            <a href="https://jay12gopu-web.github.io/Visit-Kerala/reviews.html">Traveller Reviews</a>
+          </div>
+          <div class="footer-column">
+            <h3>Official Source</h3>
+            <a href="https://www.keralatourism.org/" target="_blank" rel="noopener">Kerala Tourism</a>
+            <a href="https://www.keralatourism.org/destination/" target="_blank" rel="noopener">Official Destinations</a>
+            <a href="https://www.keralatourism.org/things-to-do/" target="_blank" rel="noopener">Things to Do</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Visit Kerala concept website.</p>
+        <a href="tel:+914712321132"><i data-lucide="phone" aria-hidden="true"></i> Kerala Tourism: +91 471 232 1132</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copy-toast" id="copy-toast" role="status" aria-live="polite">
+    <i data-lucide="check" aria-hidden="true"></i>
+    Website link copied
+  </div>
+</body>
+</html>
