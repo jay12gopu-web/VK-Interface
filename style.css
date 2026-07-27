@@ -165,7 +165,7 @@ button:focus-visible {
 }
 
 .access-container {
-  width: min(980px, 100%);
+  width: min(1080px, 100%);
   margin: 0 auto;
 }
 
@@ -205,30 +205,26 @@ button:focus-visible {
   line-height: 1.7;
 }
 
-.access-card {
+.access-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: 24px;
+  gap: 22px;
+}
+
+.access-card {
+  min-width: 0;
+  min-height: 280px;
+  display: grid;
+  grid-template-columns: 194px minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 24px 70px rgba(3, 25, 17, 0.28);
   color: var(--primary-green);
   transition: transform 0.55s var(--ease-premium), box-shadow 0.55s var(--ease-premium), border-color 0.55s var(--ease-premium);
-}
-
-.access-option {
-  min-width: 0;
-  display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  align-items: center;
-  gap: 20px;
-  padding: 4px 24px 4px 4px;
-}
-
-.access-option + .access-option {
-  padding: 4px 4px 4px 28px;
-  border-left: 1px solid rgba(10, 50, 34, 0.13);
 }
 
 .access-card:hover {
@@ -244,8 +240,8 @@ button:focus-visible {
 
 .qr-crop {
   position: relative;
-  width: 128px;
-  height: 128px;
+  width: 190px;
+  height: 190px;
   display: block;
   overflow: hidden;
   border: 2px solid var(--accent-gold);
@@ -280,15 +276,15 @@ button:focus-visible {
 .access-copy h2 {
   margin: 5px 0 8px;
   font-family: var(--font-serif);
-  font-size: 1.45rem;
+  font-size: 1.72rem;
   line-height: 1.15;
 }
 
 .access-copy > p {
-  max-width: 260px;
+  max-width: 300px;
   color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1.6;
+  font-size: 0.76rem;
+  line-height: 1.65;
 }
 
 .text-action {
@@ -377,7 +373,7 @@ footer p,
   84%, 100% { top: calc(100% - 11px); opacity: 0; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .access-hero {
     height: auto;
     max-height: none;
@@ -388,21 +384,14 @@ footer p,
     font-size: 3.5rem;
   }
 
-  .access-card {
+  .access-grid {
     grid-template-columns: 1fr;
+    width: min(610px, 100%);
+    margin: 0 auto;
   }
 
-  .access-option,
-  .access-option + .access-option {
-    grid-template-columns: 132px minmax(0, 1fr);
-    padding: 4px;
-    border-left: 0;
-  }
-
-  .access-option + .access-option {
-    margin-top: 22px;
-    padding-top: 26px;
-    border-top: 1px solid rgba(10, 50, 34, 0.13);
+  .access-card {
+    grid-template-columns: 190px minmax(0, 1fr);
   }
 
   .access-copy h2 {
@@ -450,23 +439,22 @@ footer p,
 
   .access-card {
     grid-template-columns: 1fr;
-    padding: 22px;
-  }
-
-  .access-option,
-  .access-option + .access-option {
-    grid-template-columns: 116px minmax(0, 1fr);
-    gap: 16px;
-    text-align: left;
+    gap: 20px;
+    padding: 26px 22px;
+    text-align: center;
   }
 
   .qr-crop {
-    width: 112px;
-    height: 112px;
+    width: min(190px, 58vw);
+    height: min(190px, 58vw);
   }
 
   .access-copy > p {
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  .text-action {
+    justify-content: center;
   }
 
   footer {
